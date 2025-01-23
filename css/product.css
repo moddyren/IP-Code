@@ -1,0 +1,317 @@
+/* Product Hero Section */
+.product-hero {
+    height: 60vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23FFFFFF" fill-opacity="0.05" d="M0 0h200v200H0z"/></svg>') repeat;
+    opacity: 0.1;
+}
+
+.product-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.product-hero-content h1 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.product-hero-content p {
+    color: var(--white);
+    opacity: 0.9;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* Product Overview */
+.product-overview {
+    background: var(--white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    aspect-ratio: 4/3;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.main-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.image-thumbnails img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-thumbnails img:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Info Card */
+.product-info {
+    position: sticky;
+    top: 100px;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.info-card h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.info-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Technical Details */
+.technical-details {
+    background: var(--bg-light);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: var(--bg-light);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+td {
+    color: var(--text-secondary);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-wrapper p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.content-wrapper h2,
+.content-wrapper h3,
+.content-wrapper h4 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.content-wrapper ul,
+.content-wrapper ol {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.content-wrapper li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact {
+    background: var(--white);
+    padding: 4rem 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+#product-inquiry-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#product-inquiry-form input,
+#product-inquiry-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--white);
+}
+
+#product-inquiry-form input:focus,
+#product-inquiry-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+#product-inquiry-form textarea {
+    grid-column: span 2;
+    min-height: 200px;
+    resize: vertical;
+}
+
+#product-inquiry-form button[type="submit"] {
+    grid-column: span 2;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1.2rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#product-inquiry-form button[type="submit"]:hover {
+    background: var(--primary-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-info {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .description-content {
+        padding: 2rem;
+    }
+    
+    .product-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        padding: 1rem;
+    }
+
+    #product-inquiry-form {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    #product-inquiry-form textarea,
+    #product-inquiry-form button[type="submit"] {
+        grid-column: span 1;
+    }
+} 

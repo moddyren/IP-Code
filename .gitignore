@@ -1,0 +1,22 @@
+/about - 副本.html
+/contact - 副本.html
+/index - 副本.html
+/ipx1-2-drip-test - 副本.html
+/ipx3-4-spray-test - 副本.html
+/js
+/副本
+.DS_Store
+node_modules/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

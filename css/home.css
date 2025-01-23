@@ -1,0 +1,446 @@
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hero-content p {
+    color: var(--white);
+    opacity: 0.9;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* IP Code Explanation Section */
+.ip-code-explanation {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.ip-explanation-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.ip-main-content {
+    padding-right: 2rem;
+}
+
+.ip-code-structure {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    margin: 2rem 0;
+}
+
+.code-explanation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.digit-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.digit-box strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Rating Tables */
+.rating-table {
+    margin: 2rem 0;
+}
+
+.rating-table h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.rating-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.rating-table th,
+.rating-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.rating-table th {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.rating-table td {
+    color: var(--text-secondary);
+}
+
+.rating-table tr:hover {
+    background: var(--bg-light);
+}
+
+/* Sidebar */
+.ip-code-sidebar {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    position: sticky;
+    top: 100px;
+}
+
+.ip-code-sidebar .rating-table {
+    margin-top: 2rem;
+}
+
+.ip-code-sidebar .rating-table table {
+    font-size: 0.9rem;
+}
+
+.ip-code-sidebar .rating-table td {
+    padding: 0.75rem;
+}
+
+.key-points,
+.certification-info {
+    margin-bottom: 2rem;
+}
+
+.key-points h4,
+.certification-info h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.key-points ul,
+.certification-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-points li,
+.certification-info li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.key-points li::before,
+.certification-info li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Introduction Section */
+.introduction {
+    background: var(--bg-light);
+    padding: 6rem 0;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.intro-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.05);
+}
+
+.intro-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Water Ingress Section */
+.water-ingress {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.water-ingress-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.water-ingress-content h2 {
+    margin-bottom: 2rem;
+}
+
+.water-test-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.test-type {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    transition: transform 0.3s ease;
+}
+
+.test-type:hover {
+    transform: translateY(-5px);
+}
+
+.test-type h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.test-type h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.test-type h3 a:hover {
+    color: var(--primary-light);
+}
+
+.water-ingress-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.water-ingress-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--bg-light);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#contact-form button {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: var(--primary-light);
+}
+
+/* Product Links Section */
+.product-links {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.product-item p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.learn-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.learn-more::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover::after {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ip-explanation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ip-code-sidebar {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .ip-main-content {
+        padding-right: 0;
+    }
+
+    .water-test-types {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .code-explanation {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .rating-table {
+        overflow-x: auto;
+    }
+
+    .rating-table table {
+        min-width: 500px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .product-item {
+        padding: 1.5rem;
+    }
+
+    .product-item h3 {
+        font-size: 1.1rem;
+    }
+} 

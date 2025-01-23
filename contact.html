@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IP Code Test Solutions</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SHICE</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="section-container">
+            <div class="contact-hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any inquiries about our IP testing equipment and services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="company-info">
+                    <div class="info-card">
+                        <h2>Company Information</h2>
+                        <div class="info-group">
+                            <h3>Guangzhou Shice Equipment Co., Ltd.</h3>
+                        </div>
+                        
+                        <div class="info-group">
+                            <h4>Contact Details</h4>
+                            <ul>
+                                <li><strong>Tel:</strong> +86-20-31068736</li>
+                                <li><strong>Fax:</strong> +86-20-31068273</li>
+                                <li><strong>Email:</strong> <a href="mailto:sales@iectesting.com">sales@iectesting.com</a></li>
+                                <li><strong>Website:</strong> <a href="http://www.IECtesting.com" target="_blank">www.IECtesting.com</a></li>
+                                <li><strong>Postal Code:</strong> 511490</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-group">
+                            <h4>Address</h4>
+                            <p>#1, Chencongxi 10 Xiang, Chencongcun,<br>
+                               Qiaonan Jiedao, Panyu,<br>
+                               Guangzhou, Guangdong,<br>
+                               China</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h2>Send Us a Message</h2>
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="01bb8501-c592-4852-940a-cbcf6d50398c">
+                            <input type="hidden" name="subject" value="New Contact Form Submission">
+                            <input type="hidden" name="from_name" value="IP Code Test Solutions">
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                            </div>
+
+                            <!-- Anti-spam check -->
+                            <input type="hidden" name="botcheck">
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn-primary">Send Message</button>
+                            </div>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Guangzhou Shice Equipment Co., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
