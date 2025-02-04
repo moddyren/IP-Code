@@ -8,6 +8,35 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// 移动端导航栏
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const body = document.body;
+
+mobileNavToggle.addEventListener('click', () => {
+    const isOpen = mobileNavToggle.classList.contains('active');
+    
+    mobileNavToggle.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+    
+    // 禁止/允许背景滚动
+    if (!isOpen) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = '';
+    }
+});
+
+// 点击移动端导航链接时关闭菜单
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNavToggle.classList.remove('active');
+        mobileNav.classList.remove('active');
+        body.style.overflow = '';
+    });
+});
+
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

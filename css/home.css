@@ -385,6 +385,136 @@
     transform: translateX(5px);
 }
 
+/* IP Code Section */
+.ip-code-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.ip-code-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.ip-code-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.ip-code-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.ip-code-content h3 {
+    color: var(--primary-color);
+    margin: 2.5rem 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.standards-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+.standards-list li {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.standards-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* IP Code Introduction New */
+.ip-code-intro-new {
+    background: var(--white);
+    padding: 6rem 0;
+    width: 100%;
+    position: relative;
+}
+
+.ip-code-intro-new::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    opacity: 0.2;
+}
+
+.ip-code-intro-new h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.ip-code-content-new {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+}
+
+.ip-code-content-new p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.ip-code-content-new h3 {
+    color: var(--primary-color);
+    margin: 2.5rem 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.standards-list-new {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+.standards-list-new li {
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.standards-list-new li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .ip-explanation-grid {
@@ -402,6 +532,11 @@
 
     .water-test-types {
         grid-template-columns: 1fr;
+    }
+
+    .ip-code-content-new {
+        margin: 0 2rem;
+        width: auto;
     }
 }
 
@@ -442,5 +577,40 @@
 
     .product-item h3 {
         font-size: 1.1rem;
+    }
+
+    .ip-code-section {
+        padding: 4rem 0;
+    }
+
+    .ip-code-content {
+        padding: 2rem;
+    }
+
+    .ip-code-section h2 {
+        font-size: 2rem;
+    }
+
+    .ip-code-content p,
+    .standards-list li {
+        font-size: 1rem;
+    }
+
+    .ip-code-intro-new {
+        padding: 4rem 0;
+    }
+
+    .ip-code-intro-new h2 {
+        font-size: 2rem;
+    }
+
+    .ip-code-content-new {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .ip-code-content-new p,
+    .standards-list-new li {
+        font-size: 1rem;
     }
 } 
