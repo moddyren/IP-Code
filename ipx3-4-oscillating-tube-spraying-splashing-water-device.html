@@ -9,19 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">SHICE</div>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="about.html">About</a>
-                <a href="products.html" class="active">Products</a>
-                <a href="contact.html">Contact</a>
-                <a href="blog.html">Blog</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Component -->
+    <div id="header"></div>
 
     <!-- Product Hero Section -->
     <section class="product-hero">
@@ -39,12 +28,13 @@
             <div class="product-grid">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <img src="images/ipx34-1-1.jpg" alt="IPX3/4 Spray Test Equipment" loading="lazy">
+                        <img src="images/ipx34-oscillating-tube-device-1.jpg" alt="IPX3/4 Spray Test Equipment" id="main-product-image" loading="lazy">
                     </div>
                     <div class="image-thumbnails">
-                        <img src="images/IPX34-5.jpg" alt="Equipment View 1">
-                        <img src="images/IPX34-2.jpg" alt="Equipment View 2">
-                        <img src="images/IPX34-4.jpg" alt="Equipment View 3">
+                        <img src="images/ipx34-oscillating-tube-device-1.jpg" alt="oscillating-tube-spraying-splashing-water-device View 1" class="thumbnail active" onclick="changeImage(this.src, this)">
+                        <img src="images/ipx34-oscillating-tube-device-4.jpg" alt="oscillating-tube-spraying-splashing-water-device View 2" class="thumbnail" onclick="changeImage(this.src, this)">
+                        <img src="images/ipx34-oscillating-tube-device-2.jpg" alt="oscillating-tube-spraying-splashing-water-device View 3" class="thumbnail" onclick="changeImage(this.src, this)">
+                        
                     </div>
                 </div>
                 <div class="product-info">
@@ -78,7 +68,7 @@
                     </div>
                   </div>
                   <div data-id="c2a92a6" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
-                    <div><img width="500" height="544" src="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1.jpg" alt="IPX3-IPX4 Oscillating Tube spraying and splashing water Test device" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1.jpg 500w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-276x300.jpg 276w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-134x146.jpg 134w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-46x50.jpg 46w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-69x75.jpg 69w" sizes="(max-width: 500px) 100vw, 500px"></div>
+                    <div><img width="500" height="544" src="images/ipx34-oscillating-tube-device-1.jpg" alt="IPX3-IPX4 Oscillating Tube spraying and splashing water Test device" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1.jpg 500w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-276x300.jpg 276w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-134x146.jpg 134w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-46x50.jpg 46w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-1-1-69x75.jpg 69w" sizes="(max-width: 500px) 100vw, 500px"></div>
                   </div>
                   <div data-id="374a978" data-element_type="widget" data-widget_type="theme-post-content.default">
                     <div>
@@ -88,7 +78,7 @@
                       <p>This test is used to meet the requirements of IPX3 and IPX4 in IEC 60529. In the test described in IPX3 and IPX4 with an oscillating tube, the specimen is placed in the center point of the semicircle defined by the oscillating tube. It is then subjected to a spray of water at a defined pressure to test for leakage.</p>
                       <p>The oscillating tube will have spray holes over 120° of the tube for IPX3 and over the full 180° for IPX4. In IPX3 the tube will oscillate to 60° either side of the vertical. For IPX4 the tube travels through an angle of almost 340°. The specimen needs to be placed within 200mm of the tube. For this reason different size tubes are needed to test different size specimens.</p>
                       <p> </p>
-                      <p><img decoding="async" src="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-300x155.jpg" alt="IEC60529 IPX3/IPX4 Waterproof Tester" width="300" height="155" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-300x155.jpg 300w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-260x134.jpg 260w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-50x26.jpg 50w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-145x75.jpg 145w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4.jpg 500w" sizes="(max-width: 300px) 100vw, 300px"></p>
+                      <p><img decoding="async" src="images/ipx34-oscillating-tube-device-3.jpg" alt="IEC60529 IPX3/IPX4 Waterproof Tester" width="300" height="155" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-300x155.jpg 300w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-260x134.jpg 260w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-50x26.jpg 50w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4-145x75.jpg 145w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-4.jpg 500w" sizes="(max-width: 300px) 100vw, 300px"></p>
                       <p> </p>
                       <p><strong>Features</strong></p>
                       <p>—Touch screen controller and PLC</p>
@@ -101,8 +91,8 @@
                       <p>— Stainless steel specimen support speed and angle can be set on the touch screen is adjustable</p>
                       <p>—-Power supply waterproof rotation socket for sample</p>
                       <p> </p>
-                      <p><img fetchpriority="high" decoding="async" src="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-276x300.jpg" alt="IPX3-IPX4 Oscillating Tube spraying and splashing water Test device" width="276" height="300" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-276x300.jpg 276w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-134x146.jpg 134w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-46x50.jpg 46w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-69x75.jpg 69w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2.jpg 500w" sizes="(max-width: 276px) 100vw, 276px"></p>
-                      <p><img decoding="async" src="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-300x209.jpg" alt="IPX3/IPX4 Rain Oscillation Tube Tester" width="300" height="209" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-300x209.jpg 300w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-209x146.jpg 209w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-50x35.jpg 50w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-108x75.jpg 108w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5.jpg 344w" sizes="(max-width: 300px) 100vw, 300px"></p>
+                      <p><img fetchpriority="high" decoding="async" src="images/ipx34-oscillating-tube-device-2.jpg" alt="IPX3-IPX4 Oscillating Tube spraying and splashing water Test device" width="276" height="300" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-276x300.jpg 276w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-134x146.jpg 134w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-46x50.jpg 46w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2-69x75.jpg 69w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-2.jpg 500w" sizes="(max-width: 276px) 100vw, 276px"></p>
+                      <p><img decoding="async" src="images/ipx34-oscillating-tube-device-4.jpg" alt="IPX3/IPX4 Rain Oscillation Tube Tester" width="300" height="209" srcset="https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-300x209.jpg 300w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-209x146.jpg 209w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-50x35.jpg 50w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5-108x75.jpg 108w, https://www.iectesting.com/wp-content/uploads/2019/07/IPX34-5.jpg 344w" sizes="(max-width: 300px) 100vw, 300px"></p>
                       <p> </p>
                       <table>
                         <tbody>
@@ -279,13 +269,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 IP Code Test Solutions. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer Component -->
+    <div id="footer"></div>
 
-    <script src="script.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html> 

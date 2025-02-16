@@ -222,4 +222,55 @@ footer {
 
 .fade-in {
     animation: fadeIn 0.6s ease forwards;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown span {
+    color: var(--text-primary);
+    cursor: pointer;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dropdown span:hover,
+.dropdown span.active {
+    color: var(--primary-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    min-width: 250px;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0;
+    z-index: 1000;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    margin: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
 } 
